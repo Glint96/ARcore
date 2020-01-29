@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<head>
+<script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!--modelviewerのスクリプトをDL-->
+<script type="module" src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js"></script> 
+<script>
+    $(function(){
+      //モデルを変更
+      $("#viewer2").attr("src","model/cattower_brown.glb");
+    });
+  </script>
+ </head>
+ <body>
+  <model-viewer 
+        src="" 
+        id="viewer2"
+        style="width:100%;height:100%"
+                    background-color="gray"
+                    shadow-intensity="0.7"
+                    camera-controls       
+                    auto-rotate
+                    ar
+                    magic-leap>
+      </model-viewer>
+  </body>
+ </html>
